@@ -25,12 +25,14 @@ export function App() {
     <div className="min-h-screen bg-gradient-to-b from-gray-900 via-blue-950 to-gray-900 text-gray-100 ">
       {/* Navigation Bar */}
       <nav className="px-4 md:px-8 py-8 flex justify-between items-center bg-gray-900 bg-opacity-80 backdrop-blur-sm mx-10 ">
-        <div className="flex items-center">
-          <BsDropletHalf className="text-blue-400 mr-2" size={34} />
-          <span className="font-bold text-xl md:text-2xl text-blue-300">
-            Phylax
-          </span>
-        </div>
+        <a href="/">
+          <div className="flex items-center">
+            <BsDropletHalf className="text-blue-400 mr-2" size={34} />
+            <span className="font-bold text-xl md:text-2xl text-blue-300">
+              Phylax
+            </span>
+          </div>
+        </a>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
