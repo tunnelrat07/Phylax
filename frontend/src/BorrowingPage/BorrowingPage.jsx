@@ -15,7 +15,7 @@ import {
   Shield,
   Lock,
 } from "lucide-react";
-
+import { ConnectButton, useCurrentAccount } from "@mysten/dapp-kit";
 export function BorrowingPage() {
   const [activeTab, setActiveTab] = useState("available");
   const [animateIn, setAnimateIn] = useState(false);
@@ -166,13 +166,14 @@ export function BorrowingPage() {
               </h1>
             </div>
             <div className="flex items-center space-x-4">
-              <button className="px-4 py-2 bg-blue-600 hover:bg-blue-500 rounded-full flex items-center transition-all duration-300 group shadow-lg shadow-blue-900/20 hover:shadow-blue-800/40">
+              {/* <button className="px-4 py-2 bg-blue-600 hover:bg-blue-500 rounded-full flex items-center transition-all duration-300 group shadow-lg shadow-blue-900/20 hover:shadow-blue-800/40">
                 <Wallet
                   size={16}
                   className="mr-2 group-hover:scale-110 transition-all duration-300"
                 />
                 <span className="hidden md:inline">0x7A...3F5D</span>
-              </button>
+              </button> */}
+              <ConnectButton />
             </div>
           </div>
         </div>
